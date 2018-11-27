@@ -35,6 +35,11 @@ class LoginViewContoller: UIViewController {
         
     }
     
+    @IBAction func registerAction(_ sender: Any) {
+//        self.navigationController?.pushViewController(self, animated: true)
+        performSegue(withIdentifier: "registerSegue", sender: self)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let id = segue.identifier else {
             return
@@ -44,6 +49,8 @@ class LoginViewContoller: UIViewController {
         case "ticketsSegue":
             guard let ticketsController = segue.destination as? TicketListViewController else {return}
             ticketsController.user = self.user
+        case "registerSegue":
+            guard let registerController = segue.destination as? RegisterViewController else {return}
 //            ticketsController.nickname = loginTextField.text!
 //            ticketsController.password = passwordTextField.text!
         default:

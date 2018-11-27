@@ -13,6 +13,7 @@
 		9E1053A521AD724400933027 /* TicketViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1053A421AD724400933027 /* TicketViewCell.swift */; };
 		9E1053A821AD76D300933027 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1053A721AD76D300933027 /* user.swift */; };
 		9E1053AA21AD7B5400933027 /* ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1053A921AD7B5400933027 /* ticket.swift */; };
+		9E1053AC21AD838D00933027 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1053AB21AD838D00933027 /* RegisterViewController.swift */; };
 		9E7F201C21AD539800FE46CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7F201B21AD539800FE46CF /* AppDelegate.swift */; };
 		9E7F201E21AD539800FE46CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7F201D21AD539800FE46CF /* ViewController.swift */; };
 		9E7F202121AD539800FE46CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E7F201F21AD539800FE46CF /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		9E1053A421AD724400933027 /* TicketViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewCell.swift; sourceTree = "<group>"; };
 		9E1053A721AD76D300933027 /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
 		9E1053A921AD7B5400933027 /* ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ticket.swift; sourceTree = "<group>"; };
+		9E1053AB21AD838D00933027 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		9E7F201821AD539800FE46CF /* otrs-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "otrs-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E7F201B21AD539800FE46CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E7F201D21AD539800FE46CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			children = (
 				9E10539B21AD643000933027 /* LoginViewContoller.swift */,
 				9E10539F21AD717600933027 /* TicketListViewController.swift */,
+				9E1053AB21AD838D00933027 /* RegisterViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				9E1053A521AD724400933027 /* TicketViewCell.swift in Sources */,
 				9E7F201E21AD539800FE46CF /* ViewController.swift in Sources */,
 				9E1053A821AD76D300933027 /* user.swift in Sources */,
+				9E1053AC21AD838D00933027 /* RegisterViewController.swift in Sources */,
 				9E1053A021AD717600933027 /* TicketListViewController.swift in Sources */,
 				9E10539C21AD643000933027 /* LoginViewContoller.swift in Sources */,
 				9E7F201C21AD539800FE46CF /* AppDelegate.swift in Sources */,
