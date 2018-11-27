@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Contoller-->
         <scene sceneID="cqo-4t-UyA">
             <objects>
-                <viewController id="GbM-uF-Wmf" sceneMemberID="viewController">
+                <viewController id="GbM-uF-Wmf" customClass="LoginViewContoller" customModule="otrs_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sxq-dq-p7G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,6 +48,9 @@
                                 <rect key="frame" x="15" y="480" width="150" height="46"/>
                                 <edgeInsets key="layoutMargins" top="45" left="15" bottom="0.0" right="8"/>
                                 <state key="normal" title="Войти"/>
+                                <connections>
+                                    <action selector="loginAction:" destination="GbM-uF-Wmf" eventType="touchUpInside" id="wMf-6y-3zv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0Q-dC-cwL">
                                 <rect key="frame" x="195" y="480" width="150" height="46"/>
@@ -82,6 +85,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="r3G-EC-lQq"/>
                     <connections>
+                        <outlet property="loginTextField" destination="bJe-GE-LXk" id="29p-oq-Acd"/>
+                        <outlet property="logoImage" destination="O5F-2Z-yYP" id="Ujd-Vd-ETJ"/>
+                        <outlet property="passwordTextField" destination="sv2-LB-jun" id="HDm-Pq-Ew2"/>
                         <segue destination="Bhk-jw-QHq" kind="showDetail" id="oIq-dt-j0g"/>
                     </connections>
                 </viewController>
