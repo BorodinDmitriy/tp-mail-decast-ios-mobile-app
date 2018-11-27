@@ -10,11 +10,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="148" id="Ojw-5e-3VL" customClass="TicketViewCell" customModule="otrs_app" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="395" height="148"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="189" id="Ojw-5e-3VL" customClass="TicketViewCell" customModule="otrs_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="189"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ojw-5e-3VL" id="0O7-L8-5gZ">
-                <rect key="frame" x="0.0" y="0.0" width="395" height="147.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="396" height="188.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UjH-4e-c3I">
@@ -31,12 +31,26 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHB-Fe-Kjn">
+                        <rect key="frame" x="24" y="98" width="42" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DRZ-6l-UPi">
                         <rect key="frame" x="246" y="11" width="136" height="128"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHB-Fe-Kjn">
-                        <rect key="frame" x="24" y="98" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jh-sm-nRx">
+                        <rect key="frame" x="124" y="98" width="42" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZF-XV-OP0">
+                        <rect key="frame" x="24" y="139" width="42" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -45,9 +59,14 @@
                 </subviews>
             </tableViewCellContentView>
             <connections>
+                <outlet property="dataLabel" destination="dZF-XV-OP0" id="Tk5-kL-7WB"/>
+                <outlet property="decriptionLabel" destination="6qV-zB-GpH" id="jna-EA-QDV"/>
+                <outlet property="stateLabel" destination="mHB-Fe-Kjn" id="HR8-pc-OtD"/>
+                <outlet property="ticketNumberLabel" destination="dZF-XV-OP0" id="luc-3E-mXX"/>
+                <outlet property="ticketPhoto" destination="DRZ-6l-UPi" id="qOa-3R-omL"/>
                 <outlet property="titleLabel" destination="UjH-4e-c3I" id="EIS-SL-d43"/>
             </connections>
-            <point key="canvasLocation" x="-313" y="-79"/>
+            <point key="canvasLocation" x="-313.60000000000002" y="-60.719640179910051"/>
         </tableViewCell>
     </objects>
 </document>

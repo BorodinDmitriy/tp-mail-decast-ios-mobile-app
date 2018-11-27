@@ -95,16 +95,17 @@
             </objects>
             <point key="canvasLocation" x="493.60000000000002" y="-878.41079460269873"/>
         </scene>
-        <!--View Controller-->
+        <!--Ticket List View Controller-->
         <scene sceneID="yp4-Kq-Cbe">
             <objects>
-                <viewController id="Bhk-jw-QHq" sceneMemberID="viewController">
+                <viewController id="Bhk-jw-QHq" customClass="TicketListViewController" customModule="otrs_app" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uLs-lh-sMX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tableView>
                     <connections>
+                        <outlet property="tableView" destination="uLs-lh-sMX" id="VEP-j7-Auh"/>
                         <segue destination="kF2-ct-aAK" kind="show" id="OS5-XG-fdn"/>
                     </connections>
                 </viewController>
