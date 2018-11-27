@@ -8,11 +8,14 @@
 
 import UIKit
 
-class LoginViewContoller: UIViewController {
+// TODO constSegueNames
 
+class LoginViewContoller: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var logoImage: UIImageView!
+    var user = User.defaultUser()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,11 +25,30 @@ class LoginViewContoller: UIViewController {
 
     @IBAction func loginAction(_ sender: Any) {
         
+        // todo check for correct input
+        self.user = User(nickName: loginTextField.text!, password: passwordTextField.text!)
+        performSegue(withIdentifier: "ticketsSegue", sender: self)
         // check which button clicked
         // login guard get data from fields
         // send seg or push controller
         // also if register another seg or pushcontroller
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let id = segue.identifier else {
+            return
+        }
+    
+        switch id {
+        case "ticketsSegue":
+            guard let ticketsController = segue.destination as? TicketListViewController else {return}
+            ticketsController.user = self.user
+//            ticketsController.nickname = loginTextField.text!
+//            ticketsController.password = passwordTextField.text!
+        default:
+            break
+        }
     }
     /*
     // MARK: - Navigation

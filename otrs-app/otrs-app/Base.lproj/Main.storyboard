@@ -88,7 +88,7 @@
                         <outlet property="loginTextField" destination="bJe-GE-LXk" id="29p-oq-Acd"/>
                         <outlet property="logoImage" destination="O5F-2Z-yYP" id="Ujd-Vd-ETJ"/>
                         <outlet property="passwordTextField" destination="sv2-LB-jun" id="HDm-Pq-Ew2"/>
-                        <segue destination="Bhk-jw-QHq" kind="showDetail" id="oIq-dt-j0g"/>
+                        <segue destination="Bhk-jw-QHq" kind="showDetail" identifier="ticketsSegue" id="oIq-dt-j0g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bg0-nR-DFb" userLabel="First Responder" sceneMemberID="firstResponder"/>
